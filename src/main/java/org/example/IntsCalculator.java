@@ -34,22 +34,4 @@ public class IntsCalculator implements Ints {
                 .calculate(Calculator.Operation.POW)
                 .result.intValue();
     }
-
-    @Override
-    public int sub(int arg0, int arg1) {
-        return target.newFormula()
-                .addOperand(arg0)
-                .addOperand(arg1)
-                .calculate(Calculator.Operation.SUB)
-                .result.intValue();
-    }
-
-    @Override
-    public int div(int arg0, int arg1) {
-        return target.newFormula()
-                .addOperand(arg0)
-                .addOperand(arg1)
-                .calculate(Calculator.Operation.DIV)
-                .result.intValue();
-    }
 }
